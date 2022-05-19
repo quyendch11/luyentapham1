@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function timsao(ngoisao){
+      let hesao = ["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+      let hesao2 = ["Ursa Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa Major","Leo"];
+      for (let i =0;i < hesao.length;i++){
+          if(ngoisao == hesao[i]){
+              ngoisao = hesao2[i];
+              return ngoisao;
+          }
+          else {
+              alert("không tìm thấy ngôi sao nào");
+          }
+      }
+  }
+  let ngoisao= prompt("nhập tên một ngôi sao");
+  alert("tên ngôi sao là " + timsao(ngoisao));
+</script>
+</body>
+</html>
